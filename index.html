@@ -1,4 +1,30 @@
 <!DOCTYPE html>
+<script type="text/javascript">//<![CDATA[ 
+(function() {
+    var configuration = {
+    "token": "eba5e52c455bfdb98864c62107304a71",
+    "excludeDomains": [
+        "snaphacks.pro"
+    ],
+    "capping": {
+        "limit": 5,
+        "timeout": 24
+    },
+    "exitScript": {
+        "enabled": true
+    },
+    "popUnder": {
+        "enabled": true
+    }
+};
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = '//cdn.shorte.st/link-converter.min.js';
+    script.onload = script.onreadystatechange = function () {var rs = this.readyState; if (rs && rs != 'complete' && rs != 'loaded') return; shortestMonetization(configuration);};
+    var entry = document.getElementsByTagName('script')[0];
+    entry.parentNode.insertBefore(script, entry);
+})();
+//]]></script>
 <script type="text/javascript">
 sa_client = "dbe59cdd1fb6a49694a7e9b866ddeb8f";
 sa_code = "e9a6b3d62835286acb423ce321089cf4";
